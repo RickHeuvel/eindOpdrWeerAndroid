@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/currentWeather"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/cName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#1B1A1A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/cTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="27dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+           />
+
+        <ImageView
+            android:id="@+id/cIcon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="221dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/temp"
+           />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/overviewFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentWeather"
+        android:layout_centerHorizontal="true">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/detailFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentWeather"
+        android:layout_alignRight="@id/overviewFrame"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp">
+
+    </FrameLayout>
+</RelativeLayout>

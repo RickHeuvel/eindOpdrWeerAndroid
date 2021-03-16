@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="units_values">
+        <item>metric</item>
+        <item>imperial</item>
+        <item> </item>
+    </string-array>
+    <string-array name="unit_entries">
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
